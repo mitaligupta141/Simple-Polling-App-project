@@ -1,0 +1,14 @@
+<form class="mt-10" (ngSubmit)="onLogin()" #loginForm="ngForm">
+    <input type="text" name="username" [(ngModel)]="loginData.username" placeholder="Username" required class="w-full p-3 mb-4 rounded border bg-gray-50" />
+    
+    <input type="password" name="password" [(ngModel)]="loginData.password" placeholder="Password" required class="w-full p-3 mb-4 rounded border bg-gray-50" />
+<button type="submit"
+        [disabled]="isSubmitting"
+        class="w-full bg-black text-white font-bold py-3 rounded hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed">
+  {{ isSubmitting ? 'Signing In...' : 'Sign In' }}
+</button>
+  
+    <p style="margin-left: 50px; margin-top: 10px;" class="text-xl font-bold text-gray-600 mt-3 ml-10">
+      Create new Account? <a routerLink="/registerlogin">SignUp</a>
+    </p>
+  </form>
