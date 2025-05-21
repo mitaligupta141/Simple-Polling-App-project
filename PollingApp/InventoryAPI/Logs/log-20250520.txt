@@ -12574,3 +12574,280 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13
 2025-05-20 22:01:44.670 +05:30 [INF] Executed action InventoryAPI.Controllers.AccountController.Register (pollingAPI) in 87.5533ms
 2025-05-20 22:01:44.670 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.AccountController.Register (pollingAPI)'
 2025-05-20 22:01:44.670 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Account/register - 200 null application/json; charset=utf-8 89.504ms
+2025-05-20 22:45:13.149 +05:30 [INF] User profile is available. Using 'C:\Users\MitaliGupta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-20 22:45:14.227 +05:30 [INF] Now listening on: https://localhost:7022
+2025-05-20 22:45:14.230 +05:30 [INF] Now listening on: http://localhost:5205
+2025-05-20 22:45:14.603 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 22:45:14.603 +05:30 [INF] Hosting environment: Development
+2025-05-20 22:45:14.604 +05:30 [INF] Content root path: C:\Users\MitaliGupta\OneDrive\PollingApp\InventoryAPI
+2025-05-20 22:45:59.131 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/index.html - null null
+2025-05-20 22:45:59.604 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/index.html - 200 null text/html;charset=utf-8 496.7027ms
+2025-05-20 22:45:59.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-20 22:45:59.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/_vs/browserLink - null null
+2025-05-20 22:45:59.641 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/_framework/aspnetcore-browser-refresh.js - 200 16505 application/javascript; charset=utf-8 12.2257ms
+2025-05-20 22:45:59.758 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/_vs/browserLink - 200 null text/javascript; charset=UTF-8 131.1985ms
+2025-05-20 22:45:59.818 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - null null
+2025-05-20 22:45:59.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.778ms
+2025-05-20 22:49:33.210 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Account/login - null null
+2025-05-20 22:49:33.239 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:49:33.288 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Account/login - 204 null null 38.4982ms
+2025-05-20 22:49:33.304 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Account/login - application/json 47
+2025-05-20 22:49:33.308 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:49:35.732 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.AccountController.Login (pollingAPI)'
+2025-05-20 22:49:35.797 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Models.Items.Request.LoginDto) on controller InventoryAPI.Controllers.AccountController (pollingAPI).
+2025-05-20 22:49:40.753 +05:30 [INF] Executed DbCommand (207ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [ApplicationUser] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-20 22:49:41.275 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:49:41.298 +05:30 [INF] Executed action InventoryAPI.Controllers.AccountController.Login (pollingAPI) in 5489.5483ms
+2025-05-20 22:49:41.299 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.AccountController.Login (pollingAPI)'
+2025-05-20 22:49:41.318 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Account/login - 200 null application/json; charset=utf-8 8014.2529ms
+2025-05-20 22:49:49.039 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=1&pageSize=10 - null null
+2025-05-20 22:49:49.043 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:49:49.043 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=1&pageSize=10 - 204 null null 3.9259ms
+2025-05-20 22:49:49.050 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Poll/all?page=1&pageSize=10 - null null
+2025-05-20 22:49:49.052 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:49:49.142 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:49:49.154 +05:30 [INF] Route matched with {action = "GetAllPolls", controller = "Poll"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPolls(Int32, Int32) on controller InventoryAPI.Controllers.PollingApp.Controllers.PollController (pollingAPI).
+2025-05-20 22:49:49.571 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-05-20 22:49:49.616 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedById], [t].[ExpirationDate], [t].[Question], [t0].[Id], [t0].[PollId], [t0].[Text], [t0].[Id0], [t0].[OptionId], [t0].[PollId0], [t0].[UserId]
+FROM (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question]
+    FROM [Polls] AS [p]
+    ORDER BY [p].[Id] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN (
+    SELECT [o].[Id], [o].[PollId], [o].[Text], [v].[Id] AS [Id0], [v].[OptionId], [v].[PollId] AS [PollId0], [v].[UserId]
+    FROM [Options] AS [o]
+    LEFT JOIN [Votes] AS [v] ON [o].[Id] = [v].[OptionId]
+) AS [t0] ON [t].[Id] = [t0].[PollId]
+ORDER BY [t].[Id] DESC, [t0].[Id]
+2025-05-20 22:49:49.700 +05:30 [INF] Executing ObjectResult, writing value of type 'Models.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Models.Items.Response.PollDto, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:49:49.725 +05:30 [INF] Executed action InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI) in 570.9723ms
+2025-05-20 22:49:49.725 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:49:49.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Poll/all?page=1&pageSize=10 - 200 null application/json; charset=utf-8 676.5482ms
+2025-05-20 22:49:54.423 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=2&pageSize=10 - null null
+2025-05-20 22:49:54.425 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:49:54.426 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=2&pageSize=10 - 204 null null 3.0009ms
+2025-05-20 22:49:54.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Poll/all?page=2&pageSize=10 - null null
+2025-05-20 22:49:54.460 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:49:54.469 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:49:54.469 +05:30 [INF] Route matched with {action = "GetAllPolls", controller = "Poll"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPolls(Int32, Int32) on controller InventoryAPI.Controllers.PollingApp.Controllers.PollController (pollingAPI).
+2025-05-20 22:49:54.524 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-05-20 22:49:54.541 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedById], [t].[ExpirationDate], [t].[Question], [t0].[Id], [t0].[PollId], [t0].[Text], [t0].[Id0], [t0].[OptionId], [t0].[PollId0], [t0].[UserId]
+FROM (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question]
+    FROM [Polls] AS [p]
+    ORDER BY [p].[Id] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+) AS [t]
+LEFT JOIN (
+    SELECT [o].[Id], [o].[PollId], [o].[Text], [v].[Id] AS [Id0], [v].[OptionId], [v].[PollId] AS [PollId0], [v].[UserId]
+    FROM [Options] AS [o]
+    LEFT JOIN [Votes] AS [v] ON [o].[Id] = [v].[OptionId]
+) AS [t0] ON [t].[Id] = [t0].[PollId]
+ORDER BY [t].[Id] DESC, [t0].[Id]
+2025-05-20 22:49:54.545 +05:30 [INF] Executing ObjectResult, writing value of type 'Models.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Models.Items.Response.PollDto, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:49:54.546 +05:30 [INF] Executed action InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI) in 76.2418ms
+2025-05-20 22:49:54.546 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:49:54.547 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Poll/all?page=2&pageSize=10 - 200 null application/json; charset=utf-8 88.5915ms
+2025-05-20 22:50:07.256 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Poll/GetPollBySort?sortField=expirationDate&sortDirection=asc - null null
+2025-05-20 22:50:07.257 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:07.257 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Poll/GetPollBySort?sortField=expirationDate&sortDirection=asc - 204 null null 0.941ms
+2025-05-20 22:50:07.267 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Poll/GetPollBySort?sortField=expirationDate&sortDirection=asc - null null
+2025-05-20 22:50:07.268 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:07.273 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.SortPolls (pollingAPI)'
+2025-05-20 22:50:07.283 +05:30 [INF] Route matched with {action = "SortPolls", controller = "Poll"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SortPolls(System.String, System.String) on controller InventoryAPI.Controllers.PollingApp.Controllers.PollController (pollingAPI).
+2025-05-20 22:50:07.307 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-05-20 22:50:07.397 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question], [o].[Id], [o].[PollId], [o].[Text], [v].[Id], [v].[OptionId], [v].[PollId], [v].[UserId]
+FROM [Polls] AS [p]
+LEFT JOIN [Options] AS [o] ON [p].[Id] = [o].[PollId]
+LEFT JOIN [Votes] AS [v] ON [p].[Id] = [v].[PollId]
+ORDER BY [p].[ExpirationDate], [p].[Id], [o].[Id]
+2025-05-20 22:50:07.486 +05:30 [INF] Executing ObjectResult, writing value of type 'Models.Common.ApiResponse`1[[System.Collections.Generic.List`1[[Models.Items.Response.PollDto, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:50:07.502 +05:30 [INF] Executed action InventoryAPI.Controllers.PollingApp.Controllers.PollController.SortPolls (pollingAPI) in 218.8147ms
+2025-05-20 22:50:07.502 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.SortPolls (pollingAPI)'
+2025-05-20 22:50:07.503 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Poll/GetPollBySort?sortField=expirationDate&sortDirection=asc - 200 null application/json; charset=utf-8 237.5895ms
+2025-05-20 22:50:10.297 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Poll/GetPollBySort?sortField=expirationDate&sortDirection=desc - null null
+2025-05-20 22:50:10.298 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:10.300 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Poll/GetPollBySort?sortField=expirationDate&sortDirection=desc - 204 null null 3.543ms
+2025-05-20 22:50:10.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Poll/GetPollBySort?sortField=expirationDate&sortDirection=desc - null null
+2025-05-20 22:50:10.335 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:10.336 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.SortPolls (pollingAPI)'
+2025-05-20 22:50:10.336 +05:30 [INF] Route matched with {action = "SortPolls", controller = "Poll"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SortPolls(System.String, System.String) on controller InventoryAPI.Controllers.PollingApp.Controllers.PollController (pollingAPI).
+2025-05-20 22:50:10.356 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-05-20 22:50:10.381 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question], [o].[Id], [o].[PollId], [o].[Text], [v].[Id], [v].[OptionId], [v].[PollId], [v].[UserId]
+FROM [Polls] AS [p]
+LEFT JOIN [Options] AS [o] ON [p].[Id] = [o].[PollId]
+LEFT JOIN [Votes] AS [v] ON [p].[Id] = [v].[PollId]
+ORDER BY [p].[ExpirationDate] DESC, [p].[Id], [o].[Id]
+2025-05-20 22:50:10.391 +05:30 [INF] Executing ObjectResult, writing value of type 'Models.Common.ApiResponse`1[[System.Collections.Generic.List`1[[Models.Items.Response.PollDto, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:50:10.395 +05:30 [INF] Executed action InventoryAPI.Controllers.PollingApp.Controllers.PollController.SortPolls (pollingAPI) in 58.3104ms
+2025-05-20 22:50:10.395 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.SortPolls (pollingAPI)'
+2025-05-20 22:50:10.396 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Poll/GetPollBySort?sortField=expirationDate&sortDirection=desc - 200 null application/json; charset=utf-8 62.7734ms
+2025-05-20 22:50:18.461 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Vote/cast - null null
+2025-05-20 22:50:18.461 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:18.462 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Vote/cast - 204 null null 1.5845ms
+2025-05-20 22:50:18.467 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Vote/cast - application/json 29
+2025-05-20 22:50:18.469 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:18.479 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.VoteController.CastVote (pollingAPI)'
+2025-05-20 22:50:18.484 +05:30 [INF] Route matched with {action = "CastVote", controller = "Vote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CastVote(Models.DTOS.Vote.CastVoteDto) on controller InventoryAPI.Controllers.VoteController (pollingAPI).
+2025-05-20 22:50:18.517 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [ApplicationUser] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-20 22:50:18.562 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__model_OptionId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[Id], [o].[PollId], [o].[Text], [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question]
+FROM [Options] AS [o]
+INNER JOIN [Polls] AS [p] ON [o].[PollId] = [p].[Id]
+WHERE [o].[Id] = @__model_OptionId_0
+2025-05-20 22:50:18.623 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (Size = 450), @__option_PollId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Votes] AS [v]
+        INNER JOIN [Options] AS [o] ON [v].[OptionId] = [o].[Id]
+        WHERE [v].[UserId] = @__userId_0 AND [o].[PollId] = @__option_PollId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-20 22:50:18.626 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-05-20 22:50:18.627 +05:30 [INF] Executed action InventoryAPI.Controllers.VoteController.CastVote (pollingAPI) in 142.0599ms
+2025-05-20 22:50:18.627 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.VoteController.CastVote (pollingAPI)'
+2025-05-20 22:50:18.627 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Vote/cast - 400 null text/plain; charset=utf-8 160.1949ms
+2025-05-20 22:50:27.298 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Vote/cast - null null
+2025-05-20 22:50:27.299 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:27.299 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Vote/cast - 204 null null 2.0354ms
+2025-05-20 22:50:27.302 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7022/api/Vote/cast - application/json 29
+2025-05-20 22:50:27.303 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:27.304 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.VoteController.CastVote (pollingAPI)'
+2025-05-20 22:50:27.304 +05:30 [INF] Route matched with {action = "CastVote", controller = "Vote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CastVote(Models.DTOS.Vote.CastVoteDto) on controller InventoryAPI.Controllers.VoteController (pollingAPI).
+2025-05-20 22:50:27.318 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [ApplicationUser] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-20 22:50:27.323 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__model_OptionId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[Id], [o].[PollId], [o].[Text], [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question]
+FROM [Options] AS [o]
+INNER JOIN [Polls] AS [p] ON [o].[PollId] = [p].[Id]
+WHERE [o].[Id] = @__model_OptionId_0
+2025-05-20 22:50:27.327 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450), @__option_PollId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Votes] AS [v]
+        INNER JOIN [Options] AS [o] ON [v].[OptionId] = [o].[Id]
+        WHERE [v].[UserId] = @__userId_0 AND [o].[PollId] = @__option_PollId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-20 22:50:27.586 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Votes] ([OptionId], [PollId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-05-20 22:50:27.628 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:50:27.631 +05:30 [INF] Executed action InventoryAPI.Controllers.VoteController.CastVote (pollingAPI) in 326.0908ms
+2025-05-20 22:50:27.631 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.VoteController.CastVote (pollingAPI)'
+2025-05-20 22:50:27.631 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7022/api/Vote/cast - 200 null application/json; charset=utf-8 328.6189ms
+2025-05-20 22:50:27.724 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=2&pageSize=10 - null null
+2025-05-20 22:50:27.724 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:27.725 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=2&pageSize=10 - 204 null null 0.64ms
+2025-05-20 22:50:27.729 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Poll/all?page=2&pageSize=10 - null null
+2025-05-20 22:50:27.729 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:27.730 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:50:27.731 +05:30 [INF] Route matched with {action = "GetAllPolls", controller = "Poll"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPolls(Int32, Int32) on controller InventoryAPI.Controllers.PollingApp.Controllers.PollController (pollingAPI).
+2025-05-20 22:50:27.742 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedById], [t].[ExpirationDate], [t].[Question], [t0].[Id], [t0].[PollId], [t0].[Text], [t0].[Id0], [t0].[OptionId], [t0].[PollId0], [t0].[UserId]
+FROM (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question]
+    FROM [Polls] AS [p]
+    ORDER BY [p].[Id] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+) AS [t]
+LEFT JOIN (
+    SELECT [o].[Id], [o].[PollId], [o].[Text], [v].[Id] AS [Id0], [v].[OptionId], [v].[PollId] AS [PollId0], [v].[UserId]
+    FROM [Options] AS [o]
+    LEFT JOIN [Votes] AS [v] ON [o].[Id] = [v].[OptionId]
+) AS [t0] ON [t].[Id] = [t0].[PollId]
+ORDER BY [t].[Id] DESC, [t0].[Id]
+2025-05-20 22:50:27.745 +05:30 [INF] Executing ObjectResult, writing value of type 'Models.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Models.Items.Response.PollDto, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:50:27.745 +05:30 [INF] Executed action InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI) in 14.739ms
+2025-05-20 22:50:27.745 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:50:27.746 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Poll/all?page=2&pageSize=10 - 200 null application/json; charset=utf-8 16.8076ms
+2025-05-20 22:50:37.788 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=1&pageSize=10 - null null
+2025-05-20 22:50:37.788 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:37.789 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=1&pageSize=10 - 204 null null 3.273ms
+2025-05-20 22:50:37.802 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Poll/all?page=1&pageSize=10 - null null
+2025-05-20 22:50:37.803 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:37.804 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:50:37.804 +05:30 [INF] Route matched with {action = "GetAllPolls", controller = "Poll"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPolls(Int32, Int32) on controller InventoryAPI.Controllers.PollingApp.Controllers.PollController (pollingAPI).
+2025-05-20 22:50:37.825 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedById], [t].[ExpirationDate], [t].[Question], [t0].[Id], [t0].[PollId], [t0].[Text], [t0].[Id0], [t0].[OptionId], [t0].[PollId0], [t0].[UserId]
+FROM (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question]
+    FROM [Polls] AS [p]
+    ORDER BY [p].[Id] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN (
+    SELECT [o].[Id], [o].[PollId], [o].[Text], [v].[Id] AS [Id0], [v].[OptionId], [v].[PollId] AS [PollId0], [v].[UserId]
+    FROM [Options] AS [o]
+    LEFT JOIN [Votes] AS [v] ON [o].[Id] = [v].[OptionId]
+) AS [t0] ON [t].[Id] = [t0].[PollId]
+ORDER BY [t].[Id] DESC, [t0].[Id]
+2025-05-20 22:50:37.836 +05:30 [INF] Executing ObjectResult, writing value of type 'Models.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Models.Items.Response.PollDto, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:50:37.836 +05:30 [INF] Executed action InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI) in 31.7513ms
+2025-05-20 22:50:37.836 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:50:37.837 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Poll/all?page=1&pageSize=10 - 200 null application/json; charset=utf-8 35.3276ms
+2025-05-20 22:50:40.489 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Vote/user-votes - null null
+2025-05-20 22:50:40.490 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:40.490 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Vote/user-votes - 204 null null 4.2344ms
+2025-05-20 22:50:40.499 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Vote/user-votes - null null
+2025-05-20 22:50:40.499 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:40.501 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.VoteController.GetUserVotes (pollingAPI)'
+2025-05-20 22:50:40.507 +05:30 [INF] Route matched with {action = "GetUserVotes", controller = "Vote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserVotes() on controller InventoryAPI.Controllers.VoteController (pollingAPI).
+2025-05-20 22:50:40.517 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [ApplicationUser] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-05-20 22:50:40.562 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Question], [o].[Text] AS [OptionText], GETUTCDATE() AS [VotedAt]
+FROM [Votes] AS [v]
+INNER JOIN [Polls] AS [p] ON [v].[PollId] = [p].[Id]
+INNER JOIN [Options] AS [o] ON [v].[OptionId] = [o].[Id]
+WHERE [v].[UserId] = @__userId_0
+2025-05-20 22:50:40.564 +05:30 [INF] Executing ObjectResult, writing value of type 'Models.Common.ApiResponse`1[[System.Collections.Generic.List`1[[Models.Items.Response.UserVoteDto, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:50:40.569 +05:30 [INF] Executed action InventoryAPI.Controllers.VoteController.GetUserVotes (pollingAPI) in 62.0355ms
+2025-05-20 22:50:40.569 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.VoteController.GetUserVotes (pollingAPI)'
+2025-05-20 22:50:40.569 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Vote/user-votes - 200 null application/json; charset=utf-8 70.2602ms
+2025-05-20 22:50:53.153 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=1&pageSize=10 - null null
+2025-05-20 22:50:53.154 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:53.155 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7022/api/Poll/all?page=1&pageSize=10 - 204 null null 1.6634ms
+2025-05-20 22:50:53.168 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7022/api/Poll/all?page=1&pageSize=10 - null null
+2025-05-20 22:50:53.168 +05:30 [INF] CORS policy execution successful.
+2025-05-20 22:50:53.169 +05:30 [INF] Executing endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:50:53.169 +05:30 [INF] Route matched with {action = "GetAllPolls", controller = "Poll"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPolls(Int32, Int32) on controller InventoryAPI.Controllers.PollingApp.Controllers.PollController (pollingAPI).
+2025-05-20 22:50:53.183 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[CreatedById], [t].[ExpirationDate], [t].[Question], [t0].[Id], [t0].[PollId], [t0].[Text], [t0].[Id0], [t0].[OptionId], [t0].[PollId0], [t0].[UserId]
+FROM (
+    SELECT [p].[Id], [p].[CreatedAt], [p].[CreatedById], [p].[ExpirationDate], [p].[Question]
+    FROM [Polls] AS [p]
+    ORDER BY [p].[Id] DESC
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN (
+    SELECT [o].[Id], [o].[PollId], [o].[Text], [v].[Id] AS [Id0], [v].[OptionId], [v].[PollId] AS [PollId0], [v].[UserId]
+    FROM [Options] AS [o]
+    LEFT JOIN [Votes] AS [v] ON [o].[Id] = [v].[OptionId]
+) AS [t0] ON [t].[Id] = [t0].[PollId]
+ORDER BY [t].[Id] DESC, [t0].[Id]
+2025-05-20 22:50:53.185 +05:30 [INF] Executing ObjectResult, writing value of type 'Models.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[Models.Items.Response.PollDto, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-20 22:50:53.186 +05:30 [INF] Executed action InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI) in 16.1462ms
+2025-05-20 22:50:53.186 +05:30 [INF] Executed endpoint 'InventoryAPI.Controllers.PollingApp.Controllers.PollController.GetAllPolls (pollingAPI)'
+2025-05-20 22:50:53.186 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7022/api/Poll/all?page=1&pageSize=10 - 200 null application/json; charset=utf-8 18.3578ms
